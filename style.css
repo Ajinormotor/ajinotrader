@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+   /*------Header Section----*/
+.header{
+    background: purple;
+    height: 100vh;
+    width: 100%;
+    position: static;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    padding: 2px auto;
+}
+
+.logo{
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+   margin: 20px ;
+    
+}
+
+.logo img{
+    margin-right: 20px;
+    width: 60px;
+}
+
+.logo p{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+}
+.navlink{
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.navlink ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px auto;
+   margin: 0px 20px;
+   position: relative;
+}
+
+.navlink ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlink ul li a::after{
+    content: '';
+    width: 0;
+    bottom: -10px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    height: 2px;
+    background: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.navlink ul li a:hover:after{
+    width: 100%;
+}
+
+.button{
+    width: 150px;
+    border-radius: 10px;
+    height: 5vh;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+/*------Header Section Ends----*/
+
+.container{
+    top: 10%;
+    transform: translateY(50%);
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+   margin-left: 10%;
+
+}
+
+.content-col{
+  margin: 0px 70px;
+}
+
+.content-col h1{
+    padding-top: 10%;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 3%;
+animation-delay: 0.6s;
+}
+
+.content-col p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 7%;
+    line-height: 25px;
+    animation-delay: 0.8s;
+}
+
+.content-col a{
+    width: 150px;
+    border-radius: 10px;
+    height: 5vh;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 40px;
+    color: black;
+    text-decoration: none;
+    background: white;
+    margin-right: 40px;
+    font-size: 15px;
+    animation-delay: 1s;
+}
+
+    span{
+        background: white;
+    }
+
+
+.content-col img{
+    width: 700px;
+    animation-delay: 0.6s;
+}
+
+.different{
+    color: purple;
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+.different p{
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.row{
+    display: flex;
+   
+    text-align: center;
+   justify-content: center;
+   
+}
+
+.different-col{
+    padding-top: 3%;
+    flex-basis: 31%;
+    text-align: center;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.different-col h2{
+    color: purple;
+    font-size: 20px;
+} 
+
+.different-col p{
+    color: black;
+    font-size: 20px;
+}
+
+.step{
+
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.step p{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 3%;
+    color: purple;
+
+}
+
+.step-col{
+    box-sizing: border-box;
+   border: 1px solid purple;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+    flex-basis: 31%;
+    text-align: left;
+  margin-left: 20px;
+  width: 50%;
+  background: purple;
+  padding-left: 15px;
+  padding-top: 10px;
+
+}
+
+.step-col h3{
+    color: white;
+    padding: 5px 10px 5px ;
+
+}
+
+.step-col p{
+  color: white;
+  font-size: 20px;
+}
+
+.btn{
+    width: 20%;
+    height: 6vh;
+    margin-top: 3%;
+    background: transparent;
+    border-radius: 10px;
+    color: purple;
+    border: 2px solid purple;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*------Table Section----*/
+.tables{
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.tables p{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.table-link{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.table-link ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+.table-link ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.table-link ul li::after{
+content: '';
+left: 0;
+top: 25px;
+position: absolute;
+height: 2px;
+background: purple;
+width: 0;
+transition: .4s;
+cursor: pointer;
+bottom: -10px;
+}
+
+.table-link ul li:hover::after{
+  width: 100%;
+}
+
+table{
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    border-collapse: collapse;
+  background: purple;
+    flex-basis: 31%;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+th{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    
+
+}
+
+td{
+    
+    padding: 10px 10px 10px 10px;
+
+}
+
+tr:nth-child(even){
+    background: white;
+    color: purple;
+
+}
+tr{
+    color: white;
+}
+
+
+
+td:first-child{
+    background: purple;
+    color: white;
+    border-right: none;
+}
+
+.step-table h4{
+    font-size: 30px;
+
+}
+
+.step-table p{
+    color: purple;
+}
+/*----Table section Ends-----*/
+
+
+/*----Call to action Begins----*/
+.cta{
+    background: purple;
+    text-align: center;
+    justify-content: center;
+   height: 60vh;
+    width: 100%;
+    padding-top: 8%;
+    margin-top: 5%;
+}
+.cta h5{
+    font-size: 40px;
+    color: white;
+    padding: 10px 0px 20px ;
+}
+
+.cta p{
+    padding: 10px 0px 50px;
+    color: white;
+    font-size: 30px;
+}
+.cta a{
+    background: black;
+    padding: 20px 40px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.cta img{
+    
+    width: 200px;
+}
+
+.discord img{
+    width: 30px;
+    padding-right: 10px;
+}
+
+/*--------call to action Ends-----*/
+.footer{
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    
+    
+}
+
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px 40px 30px;
+    font-size: 20px;
+    color: purple;
+    cursor: pointer;
+}
+
+.foot h6{
+    font-size: 40px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.About ul li{
+   list-style: none;
+    
+}
+
+.About ul li a{
+    text-decoration: none;
+     
+ }
+.Services ul li{
+    list-style: none;
+}
+
+.Services ul li a{
+    text-decoration: none;
+}
+
+.Support ul li{
+    list-style: none;
+}
+
+.Support ul li a{
+    text-decoration: none;
+}
+
+.bottom{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.anim{
+    opacity: 0;
+    animation:  moveup  0.4s linear forwards;
+    transform: translateY(30px);
+}
+
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+}
+    
+}
