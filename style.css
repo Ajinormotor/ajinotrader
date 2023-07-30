@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+@media(max-width: 600px){
+    body{
+        max-width: 600px;
+        display: block;
+    }
+}
+
    /*------Header Section----*/
 .header{
-    background: purple;
-    height: 100vh;
+    background-color: purple;
+    position: absolute;
+    height: 80vh;
     width: 100%;
     position: static;
 }
@@ -80,6 +89,21 @@ nav{
     cursor: pointer;
     box-sizing: border-box;
 }
+@media(max-width: 600px){
+  .header{
+    max-width: width;
+  }
+
+  .navlink{
+    display: block;
+  }
+  .navlink ul li{
+    display: inline-block;
+  }
+
+}
+
+
 /*------Header Section Ends----*/
 
 .container{
@@ -88,8 +112,7 @@ nav{
     position: absolute;
     justify-content: space-between;
     display: flex;
-   margin-left: 10%;
-
+    width: 100%;
 }
 
 .content-col{
@@ -135,9 +158,46 @@ animation-delay: 0.6s;
 
 
 .content-col img{
-    width: 700px;
+    width: 600px;
     animation-delay: 0.6s;
 }
+
+@media(max-width: 600px){
+   .container{
+    max-width: 600px;
+    display: block;
+   }
+   .content-col {
+    display: block;
+
+   }
+   .content-col h1{
+    padding-bottom: 10px;
+    display: block;
+    font-size: 20px ;
+   }
+   .content-col p{
+    padding-bottom: 20px;
+    font-size: 15px ;
+   }
+   .content-col img{
+    width: 300px;
+    display: block;
+   }
+   .content-col a{
+    
+   }
+
+}
+
+
+
+
+
+
+
+
+/*----Header Ends---*/
 
 .different{
     color: purple;
@@ -154,7 +214,6 @@ animation-delay: 0.6s;
 
 .row{
     display: flex;
-   
     text-align: center;
    justify-content: center;
    
@@ -176,6 +235,26 @@ animation-delay: 0.6s;
 .different-col p{
     color: black;
     font-size: 20px;
+}
+
+@media(max-width:  600px){
+  .row{
+    display: block;
+    flex-direction: column;
+  }
+  .different p{
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .different-col h2{
+    font-size: 15px;
+    color: purple;
+  }
+.different-col p{
+    font-size: 15px;
+}
+
 }
 
 .step{
@@ -231,6 +310,41 @@ animation-delay: 0.6s;
     border: 2px solid purple;
     font-size: 20px;
     cursor: pointer;
+}
+@media(max-width: 600px){
+    .step{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px;
+    }
+    .step p{
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        
+    }
+
+    .row{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .step-col{
+        align-items: center;
+        justify-content: center;
+        margin: 20px 60px 50px;
+        width: 70%;
+    }
+    .step-col h3{
+        text-align: center;
+    }
+    .step-col p{
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
 /*------Table Section----*/
@@ -377,7 +491,33 @@ td:first-child{
     padding-right: 10px;
 }
 
+@media(max-width: 600px){
+    .cta img{
+        width: 130px;
+    }
+    .cta h5{
+        font-size: 25px;
+
+    }
+    .cta p{
+        font-size: 20px;
+    }
+    .discord img{
+        width: 35px;
+
+    }
+}
+
 /*--------call to action Ends-----*/
+@media(max-width: 600px){
+    .foot h6{
+        font-size: 20px;
+    }
+    .About h6{
+        font-size: 15px;
+    }
+
+}
 .footer{
     text-align: center;
     width: 100%;
@@ -449,4 +589,3 @@ td:first-child{
 
 }
     
-}
