@@ -84,20 +84,51 @@ nav{
     cursor: pointer;
     box-sizing: border-box;
 }
-@media(max-width: 650px){
-  .header{
-    max-width: 800px;
-    height: 100vh;
-  }
-
-  .navlink{
-    display: block;
-
-  }
-  .navlink ul li{
-    display: inline-block;
-  }
-
+@media(max-width: 800px){
+    .navlink{
+        display: block;
+        justify-content: space-between;
+        align-items: right;
+      }
+      
+      .navlink ul li{
+          display: inline-block;
+          list-style: none;
+          padding: 0px auto;
+         margin: 0px 20px;
+         position: relative;
+      }
+      
+      .navlink ul li a{
+          text-decoration: none;
+          color: white;
+      }
+      
+      .navlink ul li a::after{
+          content: '';
+          width: 0;
+          bottom: -10px;
+          left: 0;
+          top: 30px;
+          position: absolute;
+          height: 2px;
+          background: white;
+          transition: .4s;
+          cursor: pointer;
+      }
+      
+      .navlink ul li a:hover:after{
+          width: 100%;
+      }
+      
+      .button{
+          width: 150px;
+          border-radius: 10px;
+          height: 5vh;
+          text-align: center;
+          cursor: pointer;
+          box-sizing: border-box;
+      }
 }
 
 
@@ -160,37 +191,64 @@ animation-delay: 0.6s;
     width: 400px;
     animation-delay: 0.6s;
 }
-
-@media(max-width: 650px){
-   .container{
-    max-width: 650px;
-    display: block;
-   }
-   .content-col {
-    display: block;
-
-   }
-   .content-col h1{
-    padding-bottom: 10px;
-    display: block;
-    font-size: 20px ;
-   }
-   .content-col p{
-    padding-bottom: 20px;
-    font-size: 15px ;
-   }
-   .content-col a{
-      margin-bottom: 60px;
-   }
-   .content-col img{
-    width: 300px;
-    display: block;
-    margin-top: 20px;
-   }
-   .content-col a{
+/*-----media query for container----*/
+@media(max-width: 800px){
+    .container{
+        top: 10%;
+        transform: translateY(50%);
+        position: absolute;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
     
-   }
-
+    .content-col{
+      margin: 0px 70px;
+     flex-wrap: nowrap;
+    }
+    
+    .content-col h1{
+        padding-top: 10%;
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 3%;
+    animation-delay: 0.6s;
+    }
+    
+    .content-col p{
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 7%;
+        line-height: 25px;
+        animation-delay: 0.8s;
+    }
+    
+    .content-col a{
+        width: 70px;
+        border-radius: 10px;
+        height: 4vh;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 40px;
+        color: black;
+        text-decoration: none;
+        background: white;
+        margin-right: 40px;
+        font-size: 15px;
+        animation-delay: 1s;
+    }
+    
+        span{
+            background: white;
+        }
+    
+    
+    .content-col img{
+        width: 300px;
+        animation-delay: 0.6s;
+    }
 }
 
 
@@ -240,23 +298,44 @@ animation-delay: 0.6s;
     font-size: 20px;
 }
 
-@media(max-width:  600px){
-  .row{
-    display: block;
-    flex-direction: column;
-  }
-  .different p{
-    font-size: 20px;
-    font-weight: 100;
-  }
-
-  .different-col h2{
-    font-size: 15px;
-    color: purple;
-  }
-.different-col p{
-    font-size: 15px;
-}
+@media(max-width:  800px){
+    .different{
+        color: purple;
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .different p{
+        font-size: 40px;
+        font-weight: 200;
+    }
+    
+    .row{
+        display: flex;
+        text-align: center;
+       justify-content: center;
+       
+    }
+    
+    .different-col{
+        padding-top: 3%;
+        flex-basis: 31%;
+        text-align: center;
+      margin-left: 20px;
+      width: 100%;
+    }
+    
+    .different-col h2{
+        color: purple;
+        font-size: 20px;
+    } 
+    
+    .different-col p{
+        color: black;
+        font-size: 20px;
+    }  
 
 }
 
